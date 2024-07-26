@@ -16,8 +16,8 @@ Paste the following Code in package_name\ui\Theme.kt
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = Color.Transparent.toArgb()
-            window.navigationBarColor = Color.Transparent.toArgb() //if (Prefs.isDarkTheme) Color.Black.toArgb() else Color.White.toArgb()
+            window.statusBarColor = Color.Transparent.toArgb() // this is for status bar color
+            window.navigationBarColor = Color.Transparent.toArgb() //this is for bottom system navigation bar color
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = false
         }
     }
