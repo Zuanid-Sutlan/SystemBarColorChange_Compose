@@ -18,7 +18,7 @@ Paste the following Code in package_name\ui\Theme.kt
             val window = (view.context as Activity).window
             window.statusBarColor = Color.Transparent.toArgb() // this is for status bar color
             window.navigationBarColor = Color.Transparent.toArgb() //this is for bottom system navigation bar color
-            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = false
+            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = false // this is for status bar text color
         }
     }
 ```
