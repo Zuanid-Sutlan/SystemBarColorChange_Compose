@@ -23,5 +23,20 @@ Paste the following Code in package_name\ui\Theme.kt
     }
 ```
 
+## Deployment
+Below is another way to do the same 
+
+```bash
+    val view = LocalView.current
+    if (!view.isInEditMode){
+        SideEffect {
+            val window = (view.context as Activity).window
+            window.statusBarColor = Color.Transparent.toArgb()
+            val wic = WindowCompat.getInsetsController(window, view)
+            wic.isAppearanceLightStatusBars = !darkTheme
+            wic.isAppearanceLightNavigationBars = !darkTheme
+        }
+    }
+```
 
     
