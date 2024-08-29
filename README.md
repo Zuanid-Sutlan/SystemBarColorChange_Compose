@@ -5,6 +5,8 @@ The SystemBar color change code is no longer working in the latest Android Studi
 
 Here is the code to change the SystemBar color from the Theme file in the jetpack compose app.
 
+if you are using enableEdgeToEdge() then non-of-these are needed
+
 
 
 ## Deployment
